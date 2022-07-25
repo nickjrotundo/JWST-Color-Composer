@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+  <div>
+  <span>Control the 90 band image.<br></span>
+  <label>Hue: <input type=range id=rHue max=359 value=0></label>
+    <br>
+  <label>Saturation: <input type=range id=rSat value=100></label>
+    <br>
+  <label>Lightness: <input type=range id=rL max=200 value=90></label>
+    <br>
+  <span hidden aria-hidden><label>Use "color" instead: <input type=checkbox id=cColor></label></span>
+</div>
+  
+  <div id="canvasesdiv" style="position:relative; width:978px; height:978px">
+<canvas id="c90"
+style="z-index: 1;
+position:absolute;
+left:0px;
+top:0px;">
+Your browser does not support HTML5 Canvas :(
+</canvas>
+<canvas id="c187"
+style="z-index: 2;
+position:absolute;
+left:0px;
+top:0px;">
+</canvas>
+<canvas id="c212"
+style="z-index: 3;
+position:absolute;
+left:0px;
+top:0px;">
+</canvas>
+</div>
+  
+
+<!-- <canvas id=c></canvas> -->
+<script src=script.js></script>
+</html>
