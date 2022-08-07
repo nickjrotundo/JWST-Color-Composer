@@ -9,40 +9,56 @@
 
 </head>
 
+<body>
+  <h2>Color your own JWST Southern Ring Nebula</h2>
   <div>
-  <span>Control the 90 band image.<br></span>
-  <label>Hue: <input type=range id=rHue max=359 value=0></label>
+    <span>Control the 90 band image.<br></span>
+    <label>Hue: <input type=range id=rHue90 max=359 value=20></label>
     <br>
-  <label>Saturation: <input type=range id=rSat value=100></label>
+    <label>Saturation: <input type=range id=rSat90 value=50></label>
     <br>
-  <label>Lightness: <input type=range id=rL max=200 value=90></label>
+    <label>Lightness: <input type=range id=rL90 max=99 value=70></label>
     <br>
-  <span hidden aria-hidden><label>Use "color" instead: <input type=checkbox id=cColor></label></span>
-</div>
-  
-  <div id="canvasesdiv" style="position:relative; width:978px; height:978px">
-<canvas id="c90"
-style="z-index: 1;
-position:absolute;
-left:0px;
-top:0px;">
-Your browser does not support HTML5 Canvas :(
-</canvas>
-<canvas id="c187"
-style="z-index: 2;
-position:absolute;
-left:0px;
-top:0px;">
-</canvas>
-<canvas id="c212"
-style="z-index: 3;
-position:absolute;
-left:0px;
-top:0px;">
-</canvas>
-</div>
-  
+    <br>
+  </div>
 
-<!-- <canvas id=c></canvas> -->
-<script src=script.js></script>
+  <div>
+    <span>Control the 187 band image.<br></span>
+    <label>Hue: <input type=range id=rHue187 max=359 value=50></label>
+    <br>
+    <label>Saturation: <input type=range id=rSat187 value=50>
+    </label>
+    <br>
+    <label>Lightness: <input type=range id=rL187 max=99 value=70></label>
+    <br>
+    <br>
+  </div>
+  <div>
+    <span>Control the 212 band image.<br></span>
+    <label>Hue: <input type=range id=rHue212 max=359 value=120></label>
+    <br>
+    <label>Saturation: <input type=range id=rSat212 value=50>
+    </label>
+    <br>
+    <label>Lightness: <input type=range id=rL212 max=99 value=70></label>
+    <br>
+    <br>
+  </div>
+  <div hidden id="canvasesdiv" style="position:relative; width:978px; height:978px">
+    <canvas id="c90">
+    </canvas>
+    <canvas id="c187">
+    </canvas>
+    <canvas id="c212">
+    </canvas>
+  </div>
+</body>
+
+<canvas id=c width="978" height="978">
+  Your browser does not support HTML5 Canvas :(
+</canvas>
+  <br>
+  Image Credit: NASA, ESA, CSA, STScI
+<script src=script2.js></script>
+
 </html>
