@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body>
+  <h2>Color your own JWST Jupiter</h2>
+  <a href="https://jwst-color-composer.njrotundo.repl.co/">Try the Southern Ring Nebula, which I think is more fun,
+    here!</a><br><br>
+  <div>
+    <span>Control the 212 band image.<br></span>
+    <label>Hue: <input type=range id=rHue90 max=359 value=20></label>
+    <br>
+    <label>Saturation: <input type=range id=rSat90 value=50></label>
+    <br>
+    <label>Lightness: <input type=range id=rL90 max=99 value=70></label>
+    <br>
+    <br>
+  </div>
+
+  <div>
+    <span>Control the 335 band image.<br></span>
+    <label>Hue: <input type=range id=rHue187 max=359 value=50></label>
+    <br>
+    <label>Saturation: <input type=range id=rSat187 value=50>
+    </label>
+    <br>
+    <label>Lightness: <input type=range id=rL187 max=99 value=70></label>
+    <br>
+    <br>
+  </div>
+  <!--   <div>
+    <span>Control the 212 band image.<br></span>
+    <label>Hue: <input type=range id=rHue212 max=359 value=120></label>
+    <br>
+    <label>Saturation: <input type=range id=rSat212 value=50>
+    </label>
+    <br>
+    <label>Lightness: <input type=range id=rL212 max=99 value=70></label>
+    <br>
+    <br>
+  </div> -->
+  <div hidden id="canvasesdiv" style="position:relative; width:978px; height:978px">
+    <canvas id="c90">
+    </canvas>
+    <canvas id="c187">
+    </canvas>
+    <canvas id="c212">
+    </canvas>
+  </div>
+</body>
+
+<canvas id=c width="512" height="512">
+  Your browser does not support HTML5 Canvas :(
+</canvas>
+<br>
+Image Credit: NASA, ESA, CSA, STScI
+<script src=jup.js></script>
+
+</html>
